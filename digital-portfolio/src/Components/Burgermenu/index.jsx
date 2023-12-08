@@ -12,12 +12,10 @@ import {
   import { Close } from "@mui/icons-material";
   import MenuIcon from "@mui/icons-material/Menu";
   import { useState } from "react";
-  
   import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
   import PersonIcon from '@mui/icons-material/Person';
   import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
   import { useLocation } from 'react-router-dom'
-  
   const BurgerMenu = () => {
     const [open, setOpen] = useState(false);
     return (
@@ -32,7 +30,7 @@ import {
             {open ? <Close />  : <MenuIcon /> }
           </IconButton>
           <div style={{ position: 'fixed', right: 0, top: 0, width: '100%', display: open ? 'block' : 'none', zIndex: 1000 }} className="dialog" color="white" fullScreen open={open} >
-            <Box className="burgermenubox" sx={{ background: "#9719FF", color: "white", marginLeft: '197px'}} width="138px"  height="235px">
+            <Box className="burgermenubox" sx={{ background: "#9719FF", color: "white", marginLeft: '208px'}} width="138px"  height="235px">
               <Stack flexDirection="row" justifyContent="flex-end">  
                 <IconButton
                   sx={{ color: "white" }}
