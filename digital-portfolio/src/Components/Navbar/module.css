@@ -37,6 +37,7 @@
     .burgermenunavbar{
   display: flex !important;
   gap:130px !important ;
+  margin-left: 30px !important;
     }
   
   }
