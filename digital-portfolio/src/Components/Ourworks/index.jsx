@@ -1,9 +1,10 @@
 
-import { Box,Button,Stack,Typography } from "@mui/material"
+import { Box,Button,Stack,Typography,Grid } from "@mui/material"
 import bacgourworks from "../../assets/process-bg.png"
 import ourphotone from "../../assets/work-1.jpg"
 import ourphottwo from "../../assets/work-2.jpg"
 import ourphotthree from "../../assets/work-3.jpg"
+import * as React from 'react';
 import "./ourworks.css"
 const Ourworks=()=>{
     return(
@@ -23,13 +24,13 @@ const Ourworks=()=>{
 </Stack>
 
 
+<Grid marginTop="30px" container>
+<Grid margin="auto" item md={4} sm={6} xs={8}  lg={4}   >
 
-<Stack className="ourworkphotosall" marginTop="30px" alignItems="center" justifyContent="center" flexDirection="row" gap="40px">
 
-
-<Stack alignItems="center" gap="10px">
+<Stack alignItems="center" >
     <img style={{width:"250px",borderRadius:"10%"}} src={ourphotone} alt="" />
-<Typography fontFamily="Open Sans" variant="h6" color='white'>
+<Typography  fontFamily="Open Sans" variant="h6" color='white'>
 Product Design
 </Typography>
     <Typography color="var(--text-white-60, rgba(255, 255, 255, 0.60))" fontFamily="Open Sans" >
@@ -37,8 +38,11 @@ Product Design
     </Typography>
 
 </Stack>
+</Grid>
+<Grid py={3} margin="auto" item md={4} sm={4} xs={8}  lg={4}   >
 
-<Stack alignItems="center" gap="10px">
+
+<Stack alignItems="center"  >
     <img style={{width:"250px",borderRadius:"10%"}} src={ourphottwo} alt="" />
 <Typography fontFamily="Open Sans" variant="h6" color='white'>
 App Development
@@ -48,9 +52,11 @@ App Development
     </Typography>
 
 </Stack>
+</Grid>
+<Grid py={3} margin="auto"   md={4} item sm={12} xs={8}  lg={4}   >
 
 
-<Stack alignItems="center" gap="10px">
+<Stack alignItems="center">
     <img style={{width:"250px",borderRadius:"10%"}} src={ourphotthree} alt="" />
 <Typography fontFamily="Open Sans" variant="h6" color='white'>
 Virtual Reality
@@ -61,12 +67,19 @@ Virtual Reality
 
 </Stack>
 
+</Grid>
 
 
 
 
-</Stack>
 
+
+
+
+
+
+
+</Grid>
 
 <Box className="morebtn" sx={{marginTop:"20px",border:"1px solid #FFC738",width:"100px",textAlign:"center",borderRadius:"500px",color:"black",background:"#FFC738",padding:"10px",fontFamily:"Open Sans"}}>
     

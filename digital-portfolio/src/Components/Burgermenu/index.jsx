@@ -32,7 +32,7 @@ import {
             {open ? <Close />  : <MenuIcon /> }
           </IconButton>
           <div style={{ position: 'fixed', right: 0, top: 0, width: '100%', display: open ? 'block' : 'none', zIndex: 1000 }} className="dialog" color="white" fullScreen open={open} >
-            <Box className="burgermenubox" sx={{ background: "#9719FF", color: "white", marginLeft: '167px'}} width="138px"  height="235px">
+            <Box className="burgermenubox" sx={{ background: "#9719FF", color: "white", marginLeft: '175px'}} width="138px"  height="235px">
               <Stack flexDirection="row" justifyContent="flex-end">  
                 <IconButton
                   sx={{ color: "white" }}

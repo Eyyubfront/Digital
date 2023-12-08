@@ -12,10 +12,7 @@
   .Container {
     max-width: 960px;
   }
-  .burgermenunavbar{
-    display: flex !important;
-    gap:379px !important ;
-      }
+
  
 }
 @media (max-width: 768px) {
@@ -39,7 +36,7 @@
     }
     .burgermenunavbar{
   display: flex !important;
-  gap:190px !important ;
+  gap:120px !important ;
     }
   
   }
