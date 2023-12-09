@@ -25,6 +25,7 @@
   }
   .boysiconmargn{
     margin-top: 53px !important;
+    margin-left: -1% !important;
   }
   .iconsd{
     top: 63% !important;
@@ -58,6 +59,7 @@
    .sectiontext{
       width: 78% !important;
       margin: auto !important;
+     
    }
     .inputbtn{
       flex-direction: column !important;
@@ -94,9 +96,10 @@
  }
  .takecaretext{
     text-align: center !important;
-    width: 268px !important;
-
+    width: 223px !important;
+margin-left: -4px !important;
     padding: 10px !important;
+    font-size: 40px !important;
     
  }
  .takeboy{
@@ -104,13 +107,13 @@
     align-items: center !important;
  }
  .sectiontext{
-    width: 78% !important;
+    width: 80% !important;
     margin: auto !important;
+    margin-left: 24px !important;
  }
   .inputbtn{
     flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
+    margin-left: -25% !important;
   }
   .inputs{
     width: 205px !important;
@@ -126,7 +129,7 @@
     width: 268px !important;
   }
   .boysiconboxsd{
-    margin-left: 0 !important;
+    margin-left: -20px !important;
     margin-top: 30px !important;
   }
 

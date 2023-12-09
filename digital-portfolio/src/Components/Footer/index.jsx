@@ -1,23 +1,21 @@
 import { Box, Stack, Typography } from "@mui/material"
-import logo from "../../assets/faviconc.jpg"
+
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import "./footer.css"
+import logo from "../../assets/logos.png"
 const Footer = () => {
     return (
         <>
-            <Box sx={{ backgroundColor: "var(--background-russian-violet, #1C0E3A)", height: "10%" }}>
-<Stack className="logosfoters"  padding="30px" flexDirection="row" gap="15%" alignItems="center" >
+            <Box  sx={{ backgroundColor: " #1C0E3A", height: "5%" }}>
+<Stack className="logosfoters"  padding="20px" flexDirection="row" gap="15%" alignItems="center" >
 
                 <Stack className="digtal"  marginTop='5%' flexDirection="column" gap="10px">
-                    <Stack flexDirection="row" alignItems="center" gap="3px">
-                        <img style={{ width: "30px" }} src={logo} alt="" />
-                        <Typography marginLeft="0px" variant="h5" color="white" fontFamily="Open Sans"  >
-                            Digitalmedia
-                        </Typography>
-                    </Stack>
+                <Box >
+                        <img style={{ width: "160px" }} src={logo} alt="" />
+                    </Box>
 
                     <Typography fontSize="12px" color="white" fontFamily="Open Sans">
                         Los Angeles, California, USA

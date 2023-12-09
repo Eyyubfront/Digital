@@ -4,15 +4,16 @@ import herobaner from "../../assets/boysd.png"
 import iconone from "../../assets/iconone.png"
 import icontwo from "../../assets/icontwo.png"
 import iconthree from "../../assets/iconthree.png"
+
 import "./boysicon.css"
 const Boysicon = () => {
     return (
         <>
-            <Box  className="boysiconmargn" marginTop="90px" >
-                <Stack className="takeboy" marginLeft="-8%" marginTop='13%' alignItems="center" flexDirection="row" >
+          
+                <Stack className="takeboy" marginLeft="-8%" marginTop='5%' alignItems="center" flexDirection="row" >
 
-                    <Stack marginTop="8%" className="careboxs" marginLeft="20%" gap="40px" >
-                        <Typography className="takecaretext" fontFamily="Open Sans" color="white" width="30%" variant="h3">
+                    <Stack marginTop="8%" className="careboxs" marginLeft="20%" gap="30px" >
+                        <Typography alignSelf="stretch" fontSize="60px" className="takecaretext" fontFamily="Open Sans" color="white" width="40%" >
                             We Take Care of Your Brand
                         </Typography>
 
@@ -48,7 +49,7 @@ const Boysicon = () => {
                 </Stack>
 
 
-            </Box>
+    
 
         </>
     )

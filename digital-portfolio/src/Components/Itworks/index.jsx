@@ -20,9 +20,9 @@ const Itworks=()=>{
     </Typography>
 </Stack>
 
-<Stack marginTop="60px" flexDirection="row" alignItems="center">
+<Stack  marginTop="60px" flexDirection="row" alignItems="center">
 
-<Box className="girlsphoto">
+<Box marginLeft="60px" className="girlsphoto">
 <img style={{width:"300px"}} src={girls} alt="" />
 
 </Box>

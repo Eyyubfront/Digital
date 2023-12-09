@@ -38,11 +38,15 @@
   .boysbacgcolor{
     background-image: none !important;
     margin-left: 0px !important;
-    width: 98% !important;
+    width: 100% !important;
+    height: 248em !important;
 
   }
   .allpagecolor{
     padding: 0 !important;
     height: 463vh !important;
+  }
+  .itourworks{
+    height: 453vh !important;
   }
 }
