@@ -39,6 +39,9 @@
 .morebtn{
     display: none;
 }
+.oursworksdbox{
+  margin-left: -40px !important;
+}
 .ourworkstext{
     margin-top: 60px !important;
 }

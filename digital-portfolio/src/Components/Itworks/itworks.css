@@ -31,6 +31,9 @@
     .Container {
       max-width: 100%;
     }
+    .itworkdboxed{
+      margin-left: -40px !important;
+    }
  .girlsphoto{
     display: none !important;
  }

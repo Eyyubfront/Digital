@@ -97,7 +97,7 @@
  .takecaretext{
     text-align: center !important;
     width: 223px !important;
-margin-left: -4px !important;
+margin-left: 9px !important;
     padding: 10px !important;
     font-size: 40px !important;
     
@@ -107,13 +107,13 @@ margin-left: -4px !important;
     align-items: center !important;
  }
  .sectiontext{
-    width: 80% !important;
+    width: 72% !important;
     margin: auto !important;
     margin-left: 24px !important;
  }
   .inputbtn{
     flex-direction: column !important;
-    margin-left: -25% !important;
+    margin-left: -15% !important;
   }
   .inputs{
     width: 205px !important;

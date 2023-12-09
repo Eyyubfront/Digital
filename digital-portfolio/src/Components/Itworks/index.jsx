@@ -9,6 +9,7 @@ const Itworks=()=>{
     return(
         <>
         <div id="itwork">
+<Box className="itworkdboxed">
 
 <Stack className="houitworkstext" alignItems="center" marginTop="7%">
     <Typography color="white" variant="h4" textAlign="center" fontFamily="Open Sans">
@@ -72,6 +73,7 @@ Use this section to describe your company and the products you offer. You could 
 </Stack>
 </Stack>
 </Stack>
+</Box>
 
 
         </div>

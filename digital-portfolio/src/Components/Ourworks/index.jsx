@@ -9,10 +9,10 @@ const Ourworks=()=>{
     return(
         <>
         <div id="ourwork">
-            <Box >
+      
 
            <Box  sx={{backgroundImage:`url(${bacgourworks})`,backgroundRepeat:"no-repeat",height:"128vh",marginTop:"40px"}}>
-            <Stack  gap="10px" flexDirection="column" alignItems="center">
+            <Stack  className="oursworksdbox" gap="10px" flexDirection="column" alignItems="center">
 
            <Stack  className="ourworkstext" alignItems="center" marginTop="10px">
     <Typography marginTop="10%" color="white" variant="h4" textAlign="center" fontFamily="Open Sans">
@@ -77,7 +77,7 @@ Virtual Reality
 </Box>
             </Stack>
            </Box>
-            </Box>
+         
 
 
 
