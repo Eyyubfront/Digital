@@ -5,6 +5,8 @@
     .ourworkphotosall{
         flex-direction: column !important;
         align-items: center !important;
+
+
     }
   }
 
@@ -15,7 +17,7 @@
     .ourworkphotosall{
         flex-direction: column !important;
         align-items: center !important;
-        margin-left: -40px !important;
+        
     }
     .morebtn{
         display: none;
