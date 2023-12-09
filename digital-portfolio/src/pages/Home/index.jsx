@@ -11,7 +11,7 @@ const Home = () => {
     <>
 
 
-        <Box className="boysbacgcolor" sx={{ backgroundColor: " #201142",backgroundRepeat:"no-repeat", backgroundImage: `url(${boysbacg})`, height: "130em", width: "100%" }} >
+        <Box className="boysbacgcolor" sx={{ backgroundColor: " #201142",backgroundRepeat:"no-repeat", backgroundImage: `url(${boysbacg})`, height: "135em", width: "100%" }} >
         <Navbar />
           <Boysicon />
    

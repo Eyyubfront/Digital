@@ -9,7 +9,7 @@ import logo from "../../assets/logos.png"
 const Footer = () => {
     return (
         <>
-            <Box  sx={{ backgroundColor: " #1C0E3A", height: "5%" }}>
+            <Box  sx={{ backgroundColor: " rgb(36 18 74)", height: "5%" }}>
 <Stack className="logosfoters"  padding="20px" flexDirection="row" gap="15%" alignItems="center" >
 
                 <Stack className="digtal"  marginTop='5%' flexDirection="column" gap="10px">
