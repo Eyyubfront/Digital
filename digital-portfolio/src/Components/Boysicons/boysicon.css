@@ -107,13 +107,13 @@ margin-left: 9px !important;
     align-items: center !important;
  }
  .sectiontext{
-    width: 72% !important;
+    width: 70% !important;
     margin: auto !important;
     margin-left: 24px !important;
  }
   .inputbtn{
     flex-direction: column !important;
-    margin-left: -15% !important;
+    margin-left: -30% !important;
   }
   .inputs{
     width: 205px !important;

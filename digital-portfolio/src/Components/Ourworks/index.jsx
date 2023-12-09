@@ -20,7 +20,7 @@ const Ourworks=()=>{
     </Typography>
 
     <Typography  className="sectext" marginTop="10px" textAlign="center" width="55%" color="var(--text-white-60, rgba(255, 255, 255, 0.60))" fontFamily="Open Sans" >
-    Use this section to describe      company and the products you offer. You could share your company’s story and details about why you are in business. 
+    Use this section to describe  your company and the products you offer. You could share your company’s story and details about why you are in business. 
     </Typography>
 </Stack>
 

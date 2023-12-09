@@ -5,6 +5,10 @@
   .trybtn{
     display: none;
   }
+  .burgermenunavbar{
+    display: flex !important;
+    gap: 230% !important;
+   }
 
 
 }
@@ -22,7 +26,10 @@
     .trybtn{
       display: none;
     }
- 
+ .burgermenunavbar{
+  display: flex !important;
+  gap: 30% !important;
+ }
     
   
   }

@@ -40,9 +40,13 @@
     display: none;
 }
 .oursworksdbox{
-  margin-left: -40px !important;
+  margin-left: -66px !important;
 }
 .ourworkstext{
     margin-top: 60px !important;
+}
+.sectext{
+  margin-left: 20px !important;
+  width: 54%!important;
 }
 }

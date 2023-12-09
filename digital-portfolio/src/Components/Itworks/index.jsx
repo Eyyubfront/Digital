@@ -21,7 +21,7 @@ const Itworks=()=>{
     </Typography>
 </Stack>
 
-<Stack  marginTop="60px" flexDirection="row" alignItems="center">
+<Stack className="itowrksicon"  marginTop="60px" flexDirection="row" alignItems="center">
 
 <Box marginLeft="60px" className="girlsphoto">
 <img style={{width:"300px"}} src={girls} alt="" />

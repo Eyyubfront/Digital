@@ -29,6 +29,9 @@
   .allpagecolor{
     height: 477vh !important;
   }
+  .boysbacgcolor{
+    height: 202em !important;
+  }
 
 }
 @media (max-width: 576px) {

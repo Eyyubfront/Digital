@@ -22,7 +22,7 @@ const Boysicon = () => {
                         </Typography>
 
                         <Stack className="inputbtn" flexDirection="row" gap="15px" alignItems='center'>
-                           <input className="inputs" style={{padding:"13px",border:"none",width:"250px",borderRadius:"500px",backgroundColor:"rgb(48 46 46)"}} type="text" placeholder="Enter Your Email" />
+                           <input className="inputs" style={{padding:"13px",border:"none",width:"250px",borderRadius:"500px",backgroundColor:"var(--background-white-10, rgba(255, 255, 255, 0.10))"}} type="text" placeholder="Enter Your Email" />
                       <Box className="btnstalk" sx={{textAlign:"center", background: "var(--background-sunglow, #FFC738)", fontSize: "15px", fontFamily: "Open Sans", width: "100px", color: "black", borderRadius: "500px", padding: "10px" }}>
                         Lets Lalk
                         
