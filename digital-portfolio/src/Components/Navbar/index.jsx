@@ -9,7 +9,7 @@ const Navbar = () => {
         <>
      
 
-            <Stack padding="5px" className="e" alignItems="center" flexDirection="row" justifyContent="space-between">
+            <Stack padding="12px" className="e" alignItems="center" flexDirection="row" justifyContent="space-between">
                 <Stack className="burgermenunavbar" gap="50px" padding="7px" alignItems="center" flexDirection="row"  >
                     <Box >
                         <img style={{ width: "160px" }} src={logo} alt="" />

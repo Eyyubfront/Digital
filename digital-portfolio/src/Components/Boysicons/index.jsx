@@ -10,14 +10,14 @@ const Boysicon = () => {
     return (
         <>
           
-                <Stack className="takeboy" marginLeft="-8%" marginTop='5%' alignItems="center" flexDirection="row" >
+                <Stack gap="30px" className="takeboy" marginLeft="-8%" marginTop="3%" alignItems="center" flexDirection="row" >
 
-                    <Stack marginTop="8%" className="careboxs" marginLeft="20%" gap="30px" >
+                    <Stack marginTop="10%" className="careboxs" marginLeft="22%" gap="30px" >
                         <Typography alignSelf="stretch" fontSize="60px" className="takecaretext" fontFamily="Open Sans" color="white" width="40%" >
                             We Take Care of Your Brand
                         </Typography>
 
-                        <Typography className="sectiontext" marginTop="20px" fontFamily="Open Sans" color="var(--text-white-60, rgba(255, 255, 255, 0.60))" width="45%">
+                        <Typography className="sectiontext" marginTop="10px" fontFamily="Open Sans" color="var(--text-white-60, rgba(255, 255, 255, 0.60))" width="45%">
                             Use this section to describe your company and the products you offer. You could share your company’s story and details about why you are in business.
                         </Typography>
 
@@ -33,7 +33,7 @@ const Boysicon = () => {
 
 
                     <Box  className="boysiconboxsd"  marginLeft="-30%" >
-                        <Stack className="iconsd" sx={{position:"absolute",top:"68%",zIndex:99999999,right:"35%"}} gap="15px" flexDirection="row" alignItems="center">
+                        <Stack className="iconsd" sx={{position:"absolute",top:"61%",zIndex:99999999,right:"33%"}} gap="15px" flexDirection="row" alignItems="center">
 
                         <Box>
                             <img style={{ width: "60px" }} src={icontwo} alt="" />
