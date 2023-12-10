@@ -8,6 +8,18 @@
     color: white;
 }
 
+.takecaretext{
+  color: var(--text-white, #FFF);
+
+/* Desktop/Heading 1 */
+font-family: Open Sans;
+font-size: 100px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 88px */
+text-transform: capitalize;
+
+}
 @media (max-width: 992px) {
   .Container {
     max-width: 720px;

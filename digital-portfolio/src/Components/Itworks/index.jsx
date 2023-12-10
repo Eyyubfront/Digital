@@ -11,7 +11,7 @@ const Itworks=()=>{
         <div id="itwork">
 <Box className="itworkdboxed">
 
-<Stack className="houitworkstext" alignItems="center" marginTop="7%">
+<Stack className="houitworkstext" alignItems="center" marginTop="10%">
     <Typography color="white" variant="h4" textAlign="center" fontFamily="Open Sans">
     How It Works
     </Typography>

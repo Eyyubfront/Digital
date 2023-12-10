@@ -4,8 +4,6 @@
   .Container {
     max-width: 960px;
   }
- 
-  
 }
 @media (max-width: 992px) {
   .Container {
@@ -14,9 +12,7 @@
   .trybtn{
     display: none;
   }
-
 }
- 
 @media (max-width: 768px) {
     .Container {
       max-width: 540px;
@@ -28,8 +24,6 @@
   display: flex !important;
   gap: 230% !important;
  }
-    
-  
   }
   @media (max-width: 576px) {
     .Container {
@@ -45,5 +39,4 @@
   margin-left: 20px !important;
   margin-top: 10px !important;
     }
-  
   }

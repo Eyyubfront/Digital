@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <>
 
+<div style={{ fontFamily: 'Open Sans, sans-serif' }}>
 
         <Box className="boysbacgcolor" sx={{ backgroundColor: " #201142",backgroundRepeat:"no-repeat", backgroundImage: `url(${boysbacg})`, height: "135em", width: "100%" }} >
         <Navbar />
@@ -24,6 +25,7 @@ const Home = () => {
   
    
       <Footer />
+</div>
     </>
   )
 }
