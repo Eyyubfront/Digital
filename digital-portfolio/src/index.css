@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-
+font-family: "Open Sans";
 }
 .burgermenubox{
   padding: 5px !important;
@@ -12,12 +12,18 @@
   .Container {
     max-width: 960px;
   }
+  .boysbacgcolor{
+    height: 142em !important;
+  }
  
 }
 
 @media (max-width: 992px) {
   .Container {
     max-width: 720px;
+  }
+  .boysbacgcolor{
+    height: 186em !important;
   }
  
 }
