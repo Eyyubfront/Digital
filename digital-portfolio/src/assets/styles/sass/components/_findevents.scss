@@ -73,3 +73,79 @@ gap: 2px;
     }
   }
   
+  @media (max-width:576px) {
+    #findevents {
+      position: relative;
+      background-image: url('../../../images/celebrate.png'); /* Webpack ile `~` kullanarak src'den doğru yolu kullanabilirsiniz */
+      background-size: cover;
+      background-position: center;
+      height: 650px;
+    
+      .find__text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        position: absolute;
+        text-align: center;
+        top: 63%;
+        padding: 20px;
+        color: white; /* Metin rengi arka plana uyumlu olması için */
+    
+        h2 {
+       
+          font-size: 20px;
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 10px; /* Başlık ile altındaki paragraf arasındaki boşluk */
+        }
+    .finds__abouts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+        p {
+          font-family: "Montserrat", sans-serif;
+        }
+    
+    }
+    .find__button {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      transition: color 0.5s;
+      z-index: 1;
+      background-color: #F84757; /* Varsayılan arka plan rengi */
+      color: white; /* Varsayılan metin rengi */
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1rem;
+    margin-top: 20px;
+      &:hover {
+        color: #fff;
+        background-color: red; /* Hover yapıldığında arka plan rengi değişimi */
+      }
+    
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: rgb(187, 7, 22);
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        transition: all 0.8s;
+      }
+    
+      &:hover:before {
+        top: -50px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+    
+      }
+    }
+  }

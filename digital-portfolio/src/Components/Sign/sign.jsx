@@ -9,7 +9,7 @@ const Sign = () => {
         <div className="sign__card">
             <div className="sign__left">
 <div className="sign__top">
-<h2>Join Eventslink</h2>
+<h2 className='signeventlinks'>Join Eventslink</h2>
 </div>
 <div className="sign__bottom">
 <p>People use Eventslink to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.</p>

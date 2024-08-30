@@ -27,7 +27,7 @@ import { BiChevronDown } from "react-icons/bi";
             {open ? <Close />  : <MenuIcon /> }
           </IconButton>
           <div style={{ position: 'fixed', right: 0, top: 0, width: '100%', display: open ? 'block' : 'none', zIndex: 1000 }} className="dialog" color="white" fullScreen open={open} >
-            <Box className="burgermenubox" sx={{ background: "#9719FF", color: "white", marginLeft: '208px'}} width="138px"  height="235px">
+            <Box className="burgermenubox" sx={{ background: "black", color: "white", position: 'absolute',right:0,fontSize:"28px"}} width="100%"  height="100vh">
               <Stack flexDirection="row" justifyContent="flex-end">  
                 <IconButton
                   sx={{ color: "white" }}
@@ -39,20 +39,20 @@ import { BiChevronDown } from "react-icons/bi";
                 </IconButton>
               </Stack>
   
-              <Stack flexDirection="column" gap="30px" textAlign="center">
+              <Stack sx={{marginTop:"20%"}} alignItems="center" flexDirection="column" gap="30px" textAlign="center">
         
-              <div className="navbar__navlink">
-            <Link className='linkline' to="/events">
+              <div className="burger__navlink">
+            <Link className='burgerlink' to="/events">
            <p className='navlink'>Events</p>
             </Link>
-            <Link className='linkline' to="/aboutus">
+            <Link className='burgerlink' to="/aboutus">
            <p className='navlink'>About us</p>
             </Link>
-            <Link className='linkline' to="/contactus">
+            <Link className='burgerlink' to="/contactus">
             <p className='navlink'>Contact us</p>
             </Link>     
            </div>
-           <div className="navbar__right">
+           <div className="burger__right">
             <div className="navbar__language">
               <button onClick={toggleDropdown} className="dropdown-btn">
                 EN <BiChevronDown />
@@ -64,7 +64,7 @@ import { BiChevronDown } from "react-icons/bi";
                 </div>
               )}
             </div>
-            <div className="navbar__icons">
+            <div className="burger__icons">
               <CiSearch />
               <IoMdPerson />
               <FaShoppingBag />

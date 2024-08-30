@@ -1,65 +1,107 @@
 #activities {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* İçeriği yatay olarak ortalar */
   margin-top: 30px;
+  padding: 0 20px; /* Sayfanın kenarlarından boşluk bırakır */
   background-size: cover;
-  justify-content: center;
 }
 
 .activities__cards {
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row; /* Kartları yatayda sıralar */
+  /* Kartların taşmasını sağlar ve birden fazla satıra yayılmalarına izin verir */
+  justify-content: center; /* Kartları yatay olarak ortalar */
   align-items: center;
-  gap: 5px;
-  position: relative; /* For pseudo-elements if needed */
+  width: 100%;
+  max-width: 1200px; /* Kartların çok geniş ekranlarda yayılmasını engeller */
 }
 
 .activitesallcard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; /* For positioning */
-  transition: transform 0.3s ease; /* Optional: smooth transform transition */
-  
-  &:hover {
-    .activitesimgcard {
-      border-color: red; /* Change border color to red */
-      background-color: rgba(255, 245, 246, 1);
-    }
+  position: relative;
+  transition: transform 0.3s ease;
+  flex: 1 1 calc(33.333% - 10px); /* Kartları yatayda 3'erli gruplayarak gösterir */
+ 
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+}
 
-    .activteimg {
-      filter: brightness(0) saturate(100%) invert(29%) sepia(98%) saturate(2636%) hue-rotate(359deg) brightness(100%) contrast(102%); /* Red tint filter */
-    }
+.activitesallcard:hover .activitesimgcard {
+  border-color: red;
+  background-color: rgba(255, 245, 246, 1);
+}
 
-    .activitynames {
-      color: red; /* Change text color to red */
-      border-bottom: 2px solid red; /* Add red underline */
-    }
-  }
+.activitesallcard:hover .activteimg {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(98%) saturate(2636%) hue-rotate(359deg) brightness(100%) contrast(102%);
+}
+
+.activitesallcard:hover .activitynames {
+  color: red;
+  border-bottom: 2px solid red;
+  text-align: center;
+  width: 120px;
 }
 
 .activitynames {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  position: relative; /* For positioning if needed */
-  border-bottom: 2px solid transparent; /* Invisible underline by default */
-  transition: border-bottom 0.3s ease, color 0.3s ease; /* Smooth transition for underline and text color */
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .activitesimgcard {
-  display: flex !important;
+  display: flex;
   align-items: center;
-  border: 1px solid black !important; /* Default border color */
+  border: 1px solid black;
   border-radius: 80%;
   width: 130px;
   padding: 18px;
   height: 71px;
-  position: relative; /* For positioning */
+  position: relative;
 }
 
 .activteimg {
   width: 50px;
-  margin: auto !important;
-  transition: filter 0.3s ease; /* Smooth transition for filter effect */
+  margin: auto;
+  transition: filter 0.3s ease;
+}
+
+/* Mobil Görünüm İçin Media Query */
+@media (max-width: 768px) {
+  .activities__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütunlu grid düzeni */
+    gap: 10px;
+    max-width: none; /* Mobilde genişlik kısıtlamasını kaldırır */
+  }
+
+  .activitesallcard {
+    width: 100%; /* Grid hücresinin tamamını kaplar */
+    max-width: none; /* Maksimum genişlik kısıtlamasını kaldırır */
+  }
+
+  .activitesimgcard {
+    width: 90px !important; /* Küçük ekranlarda img kart genişliği */
+  }
+}
+
+@media (max-width: 576px) {
+  .activities__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütunlu grid düzeni */
+    gap: 10px;
+    max-width: none; /* Mobilde genişlik kısıtlamasını kaldırır */
+  }
+
+  .activitesallcard {
+    width: 100%; /* Grid hücresinin tamamını kaplar */
+    max-width: none; /* Maksimum genişlik kısıtlamasını kaldırır */
+  }
+
+  .activitesimgcard {
+    width: 90px !important; /* Küçük ekranlarda img kart genişliği */
+  }
 }

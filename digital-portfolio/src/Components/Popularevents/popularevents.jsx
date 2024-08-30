@@ -58,10 +58,27 @@ const Popularevents = () => {
         ref={swiperRef}
         modules={[Navigation]}
         spaceBetween={10}
-        slidesPerView={4}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1440: {
+            slidesPerView: 4,
+          },
+        }}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
+        }}
+        onSlideChange={(swiper) => {
+          setShowPrev(!swiper.isBeginning);
+          setShowNext(!swiper.isEnd);
         }}
       >
         {events.map(event => (

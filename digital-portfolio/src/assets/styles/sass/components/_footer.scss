@@ -1,23 +1,27 @@
-#footer{
+#footer {
     background-color: black;
     color: white;
-padding: 30px;
-    .footer__container{
+    padding: 30px;
+    
+    .footer__container {
         display: flex;
         flex-direction: row !important;
         align-items: center;
-     justify-content: space-between !important;
-     .footer__name{
-        font-size: 25px;
-        font-family: "Jua", sans-serif;
-     }
-     .footer__bottom{
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-        gap: 40px;
-     
-            .footer__navlink{
+        justify-content: space-between !important;
+        gap: 20px; /* Adjust spacing if needed */
+
+        .footer__name {
+            font-size: 25px;
+            font-family: "Jua", sans-serif;
+        }
+        
+        .footer__bottom {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            gap: 40px;
+            
+            .footer__navlink {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -25,27 +29,63 @@ padding: 30px;
                 text-decoration: none !important;
                 cursor: pointer;
                 font-size: 18px;
-                .linkline{
+
+                .linkline {
                     text-decoration: none;
                     color: #FFF5F6;
-                    &:hover{
+
+                    &:hover {
                         color: gray;
                     }
                 }
             }
-      
-        .footer__mail{
-            display: flex;
-            flex-direction: row;
-            align-items: unset;
-            gap: 3px;
-            .mailadres{
-                font-family: "Inter", sans-serif;
-            }
-            .mail__icon{
-                font-size: 20px;
+
+            .footer__mail {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 3px;
+
+                .mailadres {
+                    font-family: "Inter", sans-serif;
+                }
+
+                .mail__icon {
+                    font-size: 20px;
+                }
             }
         }
-     }
+    }
+    @media (max-width: 768px) {
+        .footer__container {
+            flex-direction: column-reverse !important; /* Stack items vertically */
+            align-items: center;
+            text-align: center;
+    
+            .footer__name {
+                order: 2; /* Place footer__name below footer__bottom */
+                margin-top: 20px; /* Optional: Add spacing if needed */
+            }
+    
+            .footer__bottom {
+                order: 1; /* Place footer__bottom above footer__name */
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .footer__container {
+            flex-direction: column-reverse !important; /* Stack items vertically */
+            align-items: center;
+            text-align: center;
+    
+            .footer__name {
+                order: 2; /* Place footer__name below footer__bottom */
+                margin-top: 20px; /* Optional: Add spacing if needed */
+            }
+    
+            .footer__bottom {
+                order: 1; /* Place footer__bottom above footer__name */
+            }
+        }
     }
 }

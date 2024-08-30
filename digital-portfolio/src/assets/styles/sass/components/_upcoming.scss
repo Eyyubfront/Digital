@@ -19,6 +19,7 @@
       font-family: "Poppins", sans-serif;
       position: absolute;
       right: 55px;
+
       &:hover {
         border-bottom: 1px solid black;
       }
@@ -31,20 +32,22 @@
 
     .swiper-wrapper {
       display: flex;
+      align-items: center;
     }
 
     .swiper-slide {
-      width: 200px;
-    }
-  }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 309.5px;
+      margin-right: 10px;
+      box-sizing: border-box;
 
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 309.5px !important;
-    margin-right: 10px !important;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   .upcoming-event-card {
@@ -66,7 +69,6 @@
         background-color: white;
         border-radius: 12px;
       }
-
       .upcoming-event-image {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
@@ -171,14 +173,6 @@
     }
   }
 
-  .upcoming-event-check {
-    margin-top: 8px;
-  }
-
-  .upcoming-event-many {
-    margin: 8px 0;
-  }
-
   .swiper-button-next,
   .swiper-button-prev {
     color: black;
@@ -191,6 +185,7 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 20;
+    visibility: hidden;
 
     &::after {
       content: '';

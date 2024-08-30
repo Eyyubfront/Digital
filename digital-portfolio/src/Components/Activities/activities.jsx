@@ -17,6 +17,8 @@ const activitiesData = [
 const Activities = () => {
   return (
     <div id="activities">
+      <Container>
+
       <div className="activities__cards">
         {activitiesData.map((activity, index) => (
           <Container key={index}>
@@ -29,6 +31,7 @@ const Activities = () => {
           </Container>
         ))}
       </div>
+      </Container>
     </div>
   );
 }

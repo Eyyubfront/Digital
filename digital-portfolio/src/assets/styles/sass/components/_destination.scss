@@ -34,4 +34,85 @@
       }
     }
   }
-  
+
+  @media (max-width: 768px) {
+    #destination {
+      display: flex;
+      text-align: center;
+      flex-direction: column !important; // Fotoğraflar ve başlık yan yana olacak
+      align-items: initial; // Başlık ve fotoğraflar üstten hizalanacak
+      gap: 20px; // Başlık ile fotoğraflar arasına boşluk ekler
+    margin-top: 30px;
+      h2 {
+        margin: 0; // Başlık çevresindeki varsayılan margin'leri kaldırır
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        margin-left: 40px;
+      }
+    
+      .destination__cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    
+      .destination__card {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 6px;
+    
+        .destinationimg {
+          width: 200px;
+          border-radius: 8px; // İsteğe bağlı, köşeleri yuvarlatır
+        }
+    
+        .destinaitonname {
+          font-weight: bold;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    #destination {
+      display: flex;
+      text-align: center;
+      flex-direction: column !important; // Fotoğraflar ve başlık yan yana olacak
+      align-items: initial; // Başlık ve fotoğraflar üstten hizalanacak
+      gap: 20px; // Başlık ile fotoğraflar arasına boşluk ekler
+    margin-top: 30px;
+      h2 {
+        margin: 0; // Başlık çevresindeki varsayılan margin'leri kaldırır
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        margin-left: 40px;
+      }
+    
+      .destination__cards {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 10px;
+      }
+    
+      .destination__card {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 6px;
+    
+        .destinationimg {
+          width: 200px;
+          border-radius: 8px; // İsteğe bağlı, köşeleri yuvarlatır
+        }
+    
+        .destinaitonname {
+          font-weight: bold;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+  }

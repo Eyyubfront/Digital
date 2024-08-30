@@ -15,6 +15,7 @@ import { FaArrowLeft, FaArrowRight, FaRegHeart } from 'react-icons/fa';
 import { FaCheck } from "react-icons/fa6";
 import { CiCalendar } from "react-icons/ci";
 
+
 const events = [
   { id: 1, src: pastimeten, name: 'Outdoor Movie Night', details: '18 going', price: '$15', date: 'MON, JUL 21', time: '4:00 PM' },
   { id: 2, src: pastimeight, name: 'Tech Meetup', details: '18 going', price: '$15', date: 'MON, JUL 21', time: '4:00 PM' },
@@ -46,7 +47,6 @@ const Upcoming = () => {
       swiper.off('init', handleSlideChange);
     };
   }, []);
-
   return (
     <div id="upcoming">
       <div className="upcoming__top">
@@ -55,14 +55,31 @@ const Upcoming = () => {
       </div>
     
       <Swiper
-        ref={swiperRef}
-        modules={[Navigation]}
-        spaceBetween={10}
-        slidesPerView={4}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }}
+       ref={swiperRef}
+       modules={[Navigation]}
+       spaceBetween={10}
+       breakpoints={{
+         640: {
+           slidesPerView: 1,
+         },
+         768: {
+           slidesPerView: 2,
+         },
+         1024: {
+           slidesPerView: 4,
+         },
+         1440: {
+           slidesPerView: 4,
+         },
+       }}
+       navigation={{
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev'
+       }}
+       onSlideChange={(swiper) => {
+         setShowPrev(!swiper.isBeginning);
+         setShowNext(!swiper.isEnd);
+       }}
       >
         {events.map(event => (
           <SwiperSlide key={event.id} className="upcoming-event-card">
