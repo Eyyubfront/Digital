@@ -1,33 +1,41 @@
+import React from 'react';
+import PageContainer from '../../Components/PageContainer';
+import celebrate from '../../assets/images/celebrate.png'; // Resmi içe aktarın
+import Activities from '../../Components/Activities/activities';
+import Destinations from '../../Components/Destinations/destinations';
+import Sign from '../../Components/Sign/sign';
+import Popularevents from '../../Components/Popularevents/popularevents';
+import Upcoming from '../../Components/Upcoming/Upcoming ';
 
-import Boysicon from "../../Components/Boysicons";
-import Navbar from "../../Components/Navbar"
-import { Box } from "@mui/material";
-import boysbacg from "../../assets/hero-bg.png"
-import Itworks from "../../Components/Itworks";
-import Ourworks from "../../Components/Ourworks";
-import Footer from "../../Components/Footer";
 const Home = () => {
   return (
     <>
+      <PageContainer>
+        <div
+          id="findevents"
+          style={{ backgroundImage: `url(${celebrate})` }}
+        >
+          <div className="find__text">
+            <h2>ENJOY YOUR CITY TO THE FULLEST</h2>
+            <div className="finds__abouts">
 
-<div style={{ fontFamily: 'Open Sans, sans-serif' }}>
-
-        <Box className="boysbacgcolor" sx={{ backgroundColor: " #201142",backgroundRepeat:"no-repeat", backgroundImage: `url(${boysbacg})`, height: "135em", width: "100%" }} >
-        <Navbar />
-          <Boysicon />
-   
-
-   
-
-          <Itworks />
-          <Ourworks />
-      </Box>
-  
-   
-      <Footer />
-</div>
+            <p>
+              Find events that match your interests and book your tickets
+              effortlessly
+            </p>
+            <p>From theater shows to sports events, we have it all!</p>
+            </div>
+            <button className='find__button'>Find events</button>
+          </div>
+        </div>
+        <Activities/>
+        <Popularevents/>
+        <Upcoming/>
+        <Destinations/>
+        <Sign/>
+      </PageContainer>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

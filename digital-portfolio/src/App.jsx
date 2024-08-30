@@ -1,13 +1,10 @@
-import Home from "./pages/Home"
-import 'typeface-open-sans';
+import Routing from "./Routing"
+import  "./assets/styles/main.css"
 function App() {
- 
-
   return (
     <>
     <div>
-
- <Home/>
+<Routing/>
     </div>
     </>
   )
